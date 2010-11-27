@@ -6,11 +6,11 @@ class Money:
 
     def times(self, multiplier):
         pass
-
-    def dollar(self,amount):
+    @staticmethod
+    def dollar(amount):
         return Dollar(amount)
-
-    def franc(self,amount):
+    @staticmethod
+    def franc(amount):
         return Franc(amount)
 
     def __eq__(self,other):
